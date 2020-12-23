@@ -1,6 +1,6 @@
 How to install cgal-swig-bindings on Mac OS X with homebrew for Python
 
-Follow the following instructions in the terminal.
+Replace the python paths below with the correct version for your system and follow the following instructions in the terminal.
 
 ```
 brew install cgal
