@@ -23,5 +23,7 @@ make
 
 cd build-python 
 
-sudo mv CGAL/ /Users/binshuaiwang/Sage/sage-9.2/local/lib/python3.8/site-packages #move the cgal to the site-packages of sage
+sudo mv CGAL/ /Users/binshuaiwang/Sage/sage-9.2/local/lib/python3.8/site-packages 
+
+#move the cgal to the site-packages of sage
 ```
