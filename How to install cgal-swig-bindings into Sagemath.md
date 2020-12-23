@@ -12,7 +12,7 @@ git clone https://github.com/CGAL/cgal-swig-bindings.git
 cd cgal-swig-bindings
 ```
 
-#setting the configuration of the python version of cgal
+#setting the configuration of the python version of cgal.
 
 ```
 cmake -DCGAL_DIR=/usr/local/lib/cmake/CGAL \ 
@@ -28,7 +28,7 @@ make
 cd build-python 
 ```
 
-#move the generated CGAL folder to location under the site-packages of sage
+#move the generated CGAL folder to location under the site-packages of sage.
 
 ```
 sudo mv CGAL/ /Users/binshuaiwang/Sage/sage-9.2/local/lib/python3.8/site-packages 
