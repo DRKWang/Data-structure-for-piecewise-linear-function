@@ -15,11 +15,11 @@ cd cgal-swig-bindings
 #setting the configuration of the python version of cgal.
 
 ```
-cmake -DCGAL_DIR=/usr/local/lib/cmake/CGAL \ 
+cmake -DCGAL_DIR=/usr/local/lib/cmake/CGAL \
 -DBUILD_PYTHON=ON \
 -DBUILD_JAVA=OFF \
 -DPYTHON_LIBRARIES=/usr/local/lib/python3.9 \
--DPYTHON_LIBRARY=/usr/local/Cellar/python@3.9/3.9.1/Frameworks/Python.framework/Versions/3.9/lib/libpython3.9.dylib\
+-DPYTHON_LIBRARY=/usr/local/Cellar/python@3.9/3.9.1/Frameworks/Python.framework/Versions/3.9/lib/libpython3.9.dylib \
 -DPython_FRAMEWORKS=/usr/local/Cellar/python@3.9/3.9.1/Frameworks/Python.framework \
 -DPYTHON_INCLUDE_DIR=/usr/local/Cellar/python@3.9/3.9.1/Frameworks/Python.framework/Headers
 
