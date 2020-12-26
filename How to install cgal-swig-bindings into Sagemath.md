@@ -21,8 +21,10 @@ cmake -DCGAL_DIR=/usr/local/lib/cmake/CGAL \
 -DBUILD_PYTHON=ON \
 -DBUILD_JAVA=OFF \
 -DPYTHON_OUTDIR_PREFIX=/Users/binshuaiwang/Sage/sage-9.2/local/lib/python3.8/site-packages
-
-make
-
 ```
 
+#run it
+
+```
+make
+```
