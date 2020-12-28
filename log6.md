@@ -5,5 +5,5 @@
 
 # Implementation
 - There are 2 ways to make the script package for cgal-swig
-    - Create a new directory in the Sage library SAGE_ROOT/src/sage 
+    - Create a new directory in the Sage library ```SAGE_ROOT/src/sage``` [https://doc.sagemath.org/html/en/developer/coding_basics.html]
     - Package it as a third-party code
