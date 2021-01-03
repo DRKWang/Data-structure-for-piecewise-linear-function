@@ -6,7 +6,14 @@ Jan 2nd, 2021
 - further think how to make the modified version.
 
 # progression
-- The cgal
+- made the "cgal-swig-bindings", which is an optional pip package.
+
+    Some discussion: 
+    - name shoulde be either "cgal-swig-bindings" or "cgal_swig_bindings"?
+    - did not find "cgal-bindings" file in repology.
+
+- 
+- 
 
 
 # Resources && Understanding
