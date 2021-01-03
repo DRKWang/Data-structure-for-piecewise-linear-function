@@ -5,4 +5,9 @@ Jan 2nd, 2021
 - Find the difference between the package of [cgal-bindings 1.2](https://pypi.org/project/cgal-bindings/#modal-close) and package of the official [cgal-swig-bindings](https://github.com/CGAL/cgal-swig-bindings).
 
 # progression
+- 
 
+
+# Resources && Understanding
+- [bash languages](https://ryanstutorials.net/bash-scripting-tutorial/bash-script.php)
+- [Python framework and instructions](https://pip.pypa.io/en/stable/development/)
