@@ -96,7 +96,6 @@ Jan 2nd, 2021
     make[1]: *** [configure] Error 1
     make: *** [all-toolchain] Error 2
     ```
-    - seem to be a semi-finished package. Check [here](https://github.com/sciencectn/cgal-bindings/issues/4)
 - cgal-bindings forks from cgal-swig-bindings, but did not be updated for 2 years.
 
 
