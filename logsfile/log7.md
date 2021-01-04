@@ -42,7 +42,7 @@ Jan 2nd, 2021
         aclocal: error: autom4te failed with exit status: 1
         make[1]: *** [configure] Error 1
         make: *** [all-toolchain] Error 2
-  ➜  sage git:(cgal_swig_drk) ✗ ./sage -f cgal-swig-bindings
+  sage git:(cgal_swig_drk) ✗ ./sage -f cgal-swig-bindings
         /Applications/Xcode.app/Contents/Developer/usr/bin/make build/make/Makefile --stop
         ./bootstrap -d
         rm -rf config configure build/make/Makefile-auto.in
