@@ -12,89 +12,89 @@ Jan 2nd, 2021
     - name shoulde be either "cgal-swig-bindings" or "cgal_swig_bindings"?
     - got the error message:
     ```
-        ➜  sage git:(cgal_swig_drk) ✗ ./sage -i cgal-swig-bindings
-        /Applications/Xcode.app/Contents/Developer/usr/bin/make build/make/Makefile --stop
-        ./bootstrap -d
-        rm -rf config configure build/make/Makefile-auto.in
-        rm -f src/doc/en/installation/*.txt
-        rm -rf src/doc/en/reference/spkg/*.rst
-        rm -f src/doc/en/reference/repl/*.txt
-        rm -f environment.yml
-        rm -f src/environment.yml
-        rm -f environment-optional.yml
-        rm -f src/environment-optional.yml
-        src/doc/bootstrap:92: installing src/doc/en/installation/arch.txt and src/doc/en/installation/arch-optional.txt
-        src/doc/bootstrap:92: installing src/doc/en/installation/debian.txt and src/doc/en/installation/debian-optional.txt
-        src/doc/bootstrap:92: installing src/doc/en/installation/fedora.txt and src/doc/en/installation/fedora-optional.txt
-        src/doc/bootstrap:92: installing src/doc/en/installation/cygwin.txt and src/doc/en/installation/cygwin-optional.txt
-        src/doc/bootstrap:92: installing src/doc/en/installation/homebrew.txt and src/doc/en/installation/homebrew-optional.txt
-        src/doc/bootstrap:66: installing environment.yml, environment-optional.yml, src/environment.yml and src/environment-optional.yml
-        src/doc/bootstrap:103: installing src/doc/en/reference/spkg/*.rst
-        src/doc/bootstrap:131: installing src/doc/en/reference/repl/options.txt
-        bootstrap:73: installing 'config/config.rpath'
-        m4/sage_spkg_configures.m4:106: error: AC_SUBST: `SAGE_ENABLE_cgal-swig-bindings' is not a valid shell variable name
-        m4/sage_spkg_enable.m4:31: SAGE_SPKG_ENABLE is expanded from...
-        m4/sage_spkg_collect.m4:324: SAGE_SPKG_COLLECT is expanded from...
-        m4/sage_spkg_configures.m4:106: the top level
-        autom4te: /usr/bin/m4 failed with exit status: 1
-        aclocal: error: autom4te failed with exit status: 1
-        make[1]: *** [configure] Error 1
-        make: *** [all-toolchain] Error 2
-        ➜  sage git:(cgal_swig_drk) ✗ ./sage -f cgal-swig-bindings
-        /Applications/Xcode.app/Contents/Developer/usr/bin/make build/make/Makefile --stop
-        ./bootstrap -d
-        rm -rf config configure build/make/Makefile-auto.in
-        rm -f src/doc/en/installation/*.txt
-        rm -rf src/doc/en/reference/spkg/*.rst
-        rm -f src/doc/en/reference/repl/*.txt
-        rm -f environment.yml
-        rm -f src/environment.yml
-        rm -f environment-optional.yml
-        rm -f src/environment-optional.yml
-        src/doc/bootstrap:92: installing src/doc/en/installation/arch.txt and src/doc/en/installation/arch-optional.txt
-        src/doc/bootstrap:92: installing src/doc/en/installation/debian.txt and src/doc/en/installation/debian-optional.txt
-        src/doc/bootstrap:92: installing src/doc/en/installation/fedora.txt and src/doc/en/installation/fedora-optional.txt
-        src/doc/bootstrap:92: installing src/doc/en/installation/cygwin.txt and src/doc/en/installation/cygwin-optional.txt
-        src/doc/bootstrap:92: installing src/doc/en/installation/homebrew.txt and src/doc/en/installation/homebrew-optional.txt
-        src/doc/bootstrap:66: installing environment.yml, environment-optional.yml, src/environment.yml and src/environment-optional.yml
-        src/doc/bootstrap:103: installing src/doc/en/reference/spkg/*.rst
-        src/doc/bootstrap:131: installing src/doc/en/reference/repl/options.txt
-        bootstrap:73: installing 'config/config.rpath'
-        m4/sage_spkg_configures.m4:106: error: AC_SUBST: `SAGE_ENABLE_cgal-swig-bindings' is not a valid shell variable name
-        m4/sage_spkg_enable.m4:31: SAGE_SPKG_ENABLE is expanded from...
-        m4/sage_spkg_collect.m4:324: SAGE_SPKG_COLLECT is expanded from...
-        m4/sage_spkg_configures.m4:106: the top level
-        autom4te: /usr/bin/m4 failed with exit status: 1
-        aclocal: error: autom4te failed with exit status: 1
-        make[1]: *** [configure] Error 1
-        make: *** [cgal-swig-bindings-clean] Error 2
-        /Applications/Xcode.app/Contents/Developer/usr/bin/make build/make/Makefile --stop
-        ./bootstrap -d
-        rm -rf config configure build/make/Makefile-auto.in
-        rm -f src/doc/en/installation/*.txt
-        rm -rf src/doc/en/reference/spkg/*.rst
-        rm -f src/doc/en/reference/repl/*.txt
-        rm -f environment.yml
-        rm -f src/environment.yml
-        rm -f environment-optional.yml
-        rm -f src/environment-optional.yml
-        src/doc/bootstrap:92: installing src/doc/en/installation/arch.txt and src/doc/en/installation/arch-optional.txt
-        src/doc/bootstrap:92: installing src/doc/en/installation/debian.txt and src/doc/en/installation/debian-optional.txt
-        src/doc/bootstrap:92: installing src/doc/en/installation/fedora.txt and src/doc/en/installation/fedora-optional.txt
-        src/doc/bootstrap:92: installing src/doc/en/installation/cygwin.txt and src/doc/en/installation/cygwin-optional.txt
-        src/doc/bootstrap:92: installing src/doc/en/installation/homebrew.txt and src/doc/en/installation/homebrew-optional.txt
-        src/doc/bootstrap:66: installing environment.yml, environment-optional.yml, src/environment.yml and src/environment-optional.yml
-        src/doc/bootstrap:103: installing src/doc/en/reference/spkg/*.rst
-        src/doc/bootstrap:131: installing src/doc/en/reference/repl/options.txt
-        bootstrap:73: installing 'config/config.rpath'
-        m4/sage_spkg_configures.m4:106: error: AC_SUBST: `SAGE_ENABLE_cgal-swig-bindings' is not a valid shell variable name
-        m4/sage_spkg_enable.m4:31: SAGE_SPKG_ENABLE is expanded from...
-        m4/sage_spkg_collect.m4:324: SAGE_SPKG_COLLECT is expanded from...
-        m4/sage_spkg_configures.m4:106: the top level
-        autom4te: /usr/bin/m4 failed with exit status: 1
-        aclocal: error: autom4te failed with exit status: 1
-        make[1]: *** [configure] Error 1
-        make: *** [all-toolchain] Error 2
+    ➜  sage git:(cgal_swig_drk) ✗ ./sage -i cgal-swig-bindings
+    /Applications/Xcode.app/Contents/Developer/usr/bin/make build/make/Makefile --stop
+    ./bootstrap -d
+    rm -rf config configure build/make/Makefile-auto.in
+    rm -f src/doc/en/installation/*.txt
+    rm -rf src/doc/en/reference/spkg/*.rst
+    rm -f src/doc/en/reference/repl/*.txt
+    rm -f environment.yml
+    rm -f src/environment.yml
+    rm -f environment-optional.yml
+    rm -f src/environment-optional.yml
+    src/doc/bootstrap:92: installing src/doc/en/installation/arch.txt and src/doc/en/installation/arch-optional.txt
+    src/doc/bootstrap:92: installing src/doc/en/installation/debian.txt and src/doc/en/installation/debian-optional.txt
+    src/doc/bootstrap:92: installing src/doc/en/installation/fedora.txt and src/doc/en/installation/fedora-optional.txt
+    src/doc/bootstrap:92: installing src/doc/en/installation/cygwin.txt and src/doc/en/installation/cygwin-optional.txt
+    src/doc/bootstrap:92: installing src/doc/en/installation/homebrew.txt and src/doc/en/installation/homebrew-optional.txt
+    src/doc/bootstrap:66: installing environment.yml, environment-optional.yml, src/environment.yml and src/environment-optional.yml
+    src/doc/bootstrap:103: installing src/doc/en/reference/spkg/*.rst
+    src/doc/bootstrap:131: installing src/doc/en/reference/repl/options.txt
+    bootstrap:73: installing 'config/config.rpath'
+    m4/sage_spkg_configures.m4:106: error: AC_SUBST: `SAGE_ENABLE_cgal-swig-bindings' is not a valid shell variable name
+    m4/sage_spkg_enable.m4:31: SAGE_SPKG_ENABLE is expanded from...
+    m4/sage_spkg_collect.m4:324: SAGE_SPKG_COLLECT is expanded from...
+    m4/sage_spkg_configures.m4:106: the top level
+    autom4te: /usr/bin/m4 failed with exit status: 1
+    aclocal: error: autom4te failed with exit status: 1
+    make[1]: *** [configure] Error 1
+    make: *** [all-toolchain] Error 2
+    ➜  sage git:(cgal_swig_drk) ✗ ./sage -f cgal-swig-bindings
+    /Applications/Xcode.app/Contents/Developer/usr/bin/make build/make/Makefile --stop
+    ./bootstrap -d
+    rm -rf config configure build/make/Makefile-auto.in
+    rm -f src/doc/en/installation/*.txt
+    rm -rf src/doc/en/reference/spkg/*.rst
+    rm -f src/doc/en/reference/repl/*.txt
+    rm -f environment.yml
+    rm -f src/environment.yml
+    rm -f environment-optional.yml
+    rm -f src/environment-optional.yml
+    src/doc/bootstrap:92: installing src/doc/en/installation/arch.txt and src/doc/en/installation/arch-optional.txt
+    src/doc/bootstrap:92: installing src/doc/en/installation/debian.txt and src/doc/en/installation/debian-optional.txt
+    src/doc/bootstrap:92: installing src/doc/en/installation/fedora.txt and src/doc/en/installation/fedora-optional.txt
+    src/doc/bootstrap:92: installing src/doc/en/installation/cygwin.txt and src/doc/en/installation/cygwin-optional.txt
+    src/doc/bootstrap:92: installing src/doc/en/installation/homebrew.txt and src/doc/en/installation/homebrew-optional.txt
+    src/doc/bootstrap:66: installing environment.yml, environment-optional.yml, src/environment.yml and src/environment-optional.yml
+    src/doc/bootstrap:103: installing src/doc/en/reference/spkg/*.rst
+    src/doc/bootstrap:131: installing src/doc/en/reference/repl/options.txt
+    bootstrap:73: installing 'config/config.rpath'
+    m4/sage_spkg_configures.m4:106: error: AC_SUBST: `SAGE_ENABLE_cgal-swig-bindings' is not a valid shell variable name
+    m4/sage_spkg_enable.m4:31: SAGE_SPKG_ENABLE is expanded from...
+    m4/sage_spkg_collect.m4:324: SAGE_SPKG_COLLECT is expanded from...
+    m4/sage_spkg_configures.m4:106: the top level
+    autom4te: /usr/bin/m4 failed with exit status: 1
+    aclocal: error: autom4te failed with exit status: 1
+    make[1]: *** [configure] Error 1
+    make: *** [cgal-swig-bindings-clean] Error 2
+    /Applications/Xcode.app/Contents/Developer/usr/bin/make build/make/Makefile --stop
+    ./bootstrap -d
+    rm -rf config configure build/make/Makefile-auto.in
+    rm -f src/doc/en/installation/*.txt
+    rm -rf src/doc/en/reference/spkg/*.rst
+    rm -f src/doc/en/reference/repl/*.txt
+    rm -f environment.yml
+    rm -f src/environment.yml
+    rm -f environment-optional.yml
+    rm -f src/environment-optional.yml
+    src/doc/bootstrap:92: installing src/doc/en/installation/arch.txt and src/doc/en/installation/arch-optional.txt
+    src/doc/bootstrap:92: installing src/doc/en/installation/debian.txt and src/doc/en/installation/debian-optional.txt
+    src/doc/bootstrap:92: installing src/doc/en/installation/fedora.txt and src/doc/en/installation/fedora-optional.txt
+    src/doc/bootstrap:92: installing src/doc/en/installation/cygwin.txt and src/doc/en/installation/cygwin-optional.txt
+    src/doc/bootstrap:92: installing src/doc/en/installation/homebrew.txt and src/doc/en/installation/homebrew-optional.txt
+    src/doc/bootstrap:66: installing environment.yml, environment-optional.yml, src/environment.yml and src/environment-optional.yml
+    src/doc/bootstrap:103: installing src/doc/en/reference/spkg/*.rst
+    src/doc/bootstrap:131: installing src/doc/en/reference/repl/options.txt
+    bootstrap:73: installing 'config/config.rpath'
+    m4/sage_spkg_configures.m4:106: error: AC_SUBST: `SAGE_ENABLE_cgal-swig-bindings' is not a valid shell variable name
+    m4/sage_spkg_enable.m4:31: SAGE_SPKG_ENABLE is expanded from...
+    m4/sage_spkg_collect.m4:324: SAGE_SPKG_COLLECT is expanded from...
+    m4/sage_spkg_configures.m4:106: the top level
+    autom4te: /usr/bin/m4 failed with exit status: 1
+    aclocal: error: autom4te failed with exit status: 1
+    make[1]: *** [configure] Error 1
+    make: *** [all-toolchain] Error 2
     ```
     - seem to be a semi-finished package. Check [here](https://github.com/sciencectn/cgal-bindings/issues/4)
 - cgal-bindings forks from cgal-swig-bindings, but did not be updated for 2 years.
