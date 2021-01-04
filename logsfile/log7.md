@@ -12,7 +12,7 @@ Jan 2nd, 2021
     - name shoulde be either "cgal-swig-bindings" or "cgal_swig_bindings"?
     - did not find "cgal-bindings" file in repology.
 
-- 
+- cgal-bindings forks from cgal-swig-bindings, but did not be updated for 2 years.
 - 
 
 
