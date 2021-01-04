@@ -13,7 +13,6 @@ Jan 2nd, 2021
     - did not find "cgal-bindings" file in repology.
 
 - cgal-bindings forks from cgal-swig-bindings, but did not be updated for 2 years.
-- 
 
 
 # Resources && Understanding
