@@ -17,7 +17,7 @@ cd cgal-swig-bindings
 #setting the configuration of the python version of cgal.
 
 ```
-cmake -DCGAL_DIR=/usr/local/lib/cmake/CGAL \
+cmake -DCGAL_DIR=/usr/local/Cellar/cgal/5.1.1/lib/cmake/CGAL \
 -DBUILD_PYTHON=ON \
 -DBUILD_JAVA=OFF \
 -DPYTHON_OUTDIR_PREFIX=/Users/binshuaiwang/Sage/sage-9.2/local/lib/python3.7/site-packages
