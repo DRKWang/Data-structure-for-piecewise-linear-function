@@ -26,7 +26,7 @@ Collecting git+https://github.com/CGAL/cgal-swig-bindings.git@master
 ERROR: Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.
 ```
 
-The reason seem to be lack of package directory 'build/build-python/CGAL' in the original downloaded package, whereas this directory will be built automatically when we use ```python3 install setup.py```. I also check the difference between the [cgal_swig_bindings](https://github.com/CGAL/cgal-swig-bindings) and [cgal_bindings](https://pypi.org/project/cgal-bindings/#files), which can be installed via pip3 tarball. The tarball of this does contain both 'build-python/CGAL' and 'cgal_bindings.egg-info' folder, whereas they are not included in the original package.
+The reason seem to be lack of package directory 'build/build-python/CGAL' in the original downloaded package, whereas this directory will be built automatically when we use ```python3 install setup.py```. The difference between the [cgal_swig_bindings](https://github.com/CGAL/cgal-swig-bindings) and [cgal_bindings](https://pypi.org/project/cgal-bindings/#files), which can be installed via pip3 tarball, is that the latter contains 'build-python/CGAL', which means it does not  need to be built from the source, whereas the former will be built from the source.
 
 
 
