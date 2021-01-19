@@ -8,7 +8,7 @@
   To solve this error, we can 
   - set the ```-DPython_EXECUTABLE=$SAGE_ROOT/build/bin/sage-python23```, which will git the direction to the python Compiler. 
   - set the root, ```-DPython_ROOT_DIR```.
-  - Set the version of python, ```find_package(PythonInterp 3.5 REQUIRED)```.
+  - Set the version of python, ```find_package(PythonInterp 3.7 EXACT)```.
 
 
 
