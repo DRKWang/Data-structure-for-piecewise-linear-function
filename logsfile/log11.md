@@ -2,14 +2,21 @@
 - install the cgal_swig_bindings into sage
 
 # So far
-- has installed the cgal_swig_bindings successfully.
-- But in some cases, we may encounter the error that the code was deprecated by the newer python version, which comes from
-```Found Python: (found version "3.8.2") found components: Interpreter Development Development.Module Development.Embed``` 
-  To solve this error, we can 
-  - set the ```-DPython_EXECUTABLE=$SAGE_ROOT/build/bin/sage-python23```, which will git the direction to the python Compiler. 
-  - set the root, ```-DPython_ROOT_DIR```.
-  - Set the version of python, ```find_package(PythonInterp 3.7 EXACT)```.
+- It has been installed successfully by [packaging it into a normal package](https://doc.sagemath.org/html/en/developer/packaging.html) using ```sdh_cmake``` etc. The scripts is as follows:
+  ```
+  cd src
 
+  echo "Configuring cgal_swig_bindings."
+
+  sdh_cmake -DCGAL_DIR=/usr/local/opt/cgal/lib/cmake/CGAL \
+  -DBUILD_PYTHON=ON \
+  -DBUILD_JAVA=OFF
+
+  sdh_make
+
+  sdh_make_install
+  ```
+- It should be mentioned that the tarball of cgal_swig_bindings is not the same as the tarball compressed by the folder downloaded from cgal_swig_bindings. The difference between them is changing from ```find_package(Python COMPONENTS Interpreter Development)``` to ```find_package(Python 3.7 EXACT COMPONENTS Interpreter Development)```.
 
 
 # Reference
