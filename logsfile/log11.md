@@ -16,3 +16,4 @@
 - [cmake template](https://mjmorse.com/blog/cmake-template/)
 - [cmake wiki](https://gitlab.kitware.com/cmake/community/-/wikis/home)
 - [cmake find package grammary](https://cmake.org/cmake/help/latest/command/find_package.html#search-procedure)
+- [dependencies of cgal](https://doc.cgal.org/latest/Manual/thirdparty.html)
