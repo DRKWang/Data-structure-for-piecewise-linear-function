@@ -18,6 +18,8 @@
   ```
 - It should be mentioned that the tarball of cgal_swig_bindings is not the same as the tarball compressed by the folder downloaded from cgal_swig_bindings. The difference between them is changing from ```find_package(Python COMPONENTS Interpreter Development)``` to ```find_package(Python 3.7 EXACT COMPONENTS Interpreter Development)```.
 
+- Dependencies is a big issue for flawlessly running the cgal_swig_packages. Some module will be imported with errors when the corresponding [dependencies](https://doc.cgal.org/latest/Manual/thirdparty.html) is missing.
+
 
 # Reference
 - [cmake template](https://mjmorse.com/blog/cmake-template/)
