@@ -1,4 +1,5 @@
 #Type the following scripts to check whether CGAL is installed successfully and the results should look like as follows:
+
 #OK
 #list does not contains only points
 #Not a list
