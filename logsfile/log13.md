@@ -1,5 +1,5 @@
 # So far
-
+- Update a test example to check whether the cgal has been installed successfully.
 
 # Understanding
 
