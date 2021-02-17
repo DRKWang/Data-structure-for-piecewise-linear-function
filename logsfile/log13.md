@@ -1,6 +1,8 @@
 # So far
 - Update a test example to check whether the cgal has been installed successfully.
 
+
+
 # Understanding
 
 ## swig
@@ -12,8 +14,20 @@ In turn, we use swig to generate automatically. We still have to write SWIG inte
 
 According to [this slides](https://en.opensuse.org/images/e/eb/Kkaempf_KnowledgeSharing_Swig.pdf), the process would look like this: lib.h + lib.i -(swig)-> lib_wrapper.c -(gcc)-> lib_wrap.so. And lib_wrap.so can be used by python.
   
+## Integer programming
 
-## Points
+supposed that we have a mixed integer programming:
+
+
+<pre xml:lang="latex">
+Min c^T x
+s.t. Ax = b
+   x_j in Z 1<=j<=p
+   x_j >= 0 1<=j<=n
+</pre>
+
+
+## others
 
 src := system resource controller
 
