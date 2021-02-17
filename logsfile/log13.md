@@ -2,9 +2,16 @@
 
 
 # Understanding
-- The difference between C and python is that C has many data types whereas python only has one object.
-- 
-- swig is a thing that helps the programmer to automatically generate binding codes.
+
+The difference between C and python is that C has many data types whereas python only has one object.
+
+swig is a thing that helps the programmer to automatically generate binding codes. Originally, we have a library in C and we hope to make it accessible via python. We can not explicitly use it and thus, we add a wrapper function, or say file, for it to form a python module to be used. This wrapper function will make the double transformation between python and C, especially in terms of data type. However, this process is tedious.
+
+In turn, we use swig to generate automatically. We still have to write SWIG interface file to list all the function that are used to be interfaced. 
+
+According to [this slides](https://en.opensuse.org/images/e/eb/Kkaempf_KnowledgeSharing_Swig.pdf), the process would look like this: lib.h + lib.i -(swig)-> lib_wrapper.c -(gcc)-> lib_wrap.so. And lib_wrap.so can be used by python.
+  
+
 
 # Points
 src := system resource controller
