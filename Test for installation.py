@@ -15,7 +15,6 @@
 #-2 -2 2
 
 preparser(False)
-
 from CGAL import CGAL_Triangulation_3
 from CGAL import CGAL_Kernel
 from CGAL.CGAL_Kernel import Point_2
