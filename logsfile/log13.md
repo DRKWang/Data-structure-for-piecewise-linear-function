@@ -31,6 +31,7 @@ we can rewrite it as the basic/nonbasic varaibles:
  x_i = b_i - \Sum a_ij x_j  i in B, where B means set of index of basic variables
 </pre>
 
+Then we drop the nonnegativity restriction on all the basic variables x_i, i ∈ B. 
 
 
 
