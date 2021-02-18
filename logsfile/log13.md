@@ -16,15 +16,22 @@ According to [this slides](https://en.opensuse.org/images/e/eb/Kkaempf_Knowledge
   
 ## Integer programming
 
-supposed that we have a mixed integer programming:
-
+supposed that we have a mixed integer programming as follows:
 
 <pre xml:lang="latex">
 Min c^T x
-s.t. Ax = b
-   x_j in Z 1<=j<=p
-   x_j >= 0 1<=j<=n
+s.t. A x = b
+     x_j in Z+, 1<=j<=p
+     x_j>=0, 1<=j<=n
 </pre>
+
+we can rewrite it as the basic/nonbasic varaibles:
+
+<pre xml:lang="latex">
+ x_i = b_i - \Sum a_ij x_j  i in B, where B means set of index of basic variables
+</pre>
+
+
 
 
 ## others
@@ -36,7 +43,7 @@ that has a well-defined interface by which behavior is invoked.
 
 Static libraries are incorporated into a program executable before the program is run.
 
-Shared libraries(.so/.dylib) are loaded at program start-up and may be shared by different programs.
+Shared libraries(.so/.dylib) are loaded at program start-up and may be shared by different program
 
 Dynamically loaded libraries are loaded while the executable is running.
 
