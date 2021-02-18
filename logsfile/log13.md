@@ -54,3 +54,4 @@ Dynamically loaded libraries are loaded while the executable is running.
 - tutorial videos for swig https://www.youtube.com/watch?v=J-iVTLp6M9I&t=12s
 - library classification https://www.massey.ac.nz/~dpplayne/159732/Lecture05-Libraries.ppt
 - Gomory's method http://eventos.cmm.uchile.cl/discretas2016/wp-content/uploads/sites/26/2016/01/L2.pdf
+- lattice-free https://www.youtube.com/watch?v=ntkVMUroIso&t=1s
