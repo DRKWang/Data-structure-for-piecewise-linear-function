@@ -25,6 +25,11 @@ s.t. A x = b
      x_j>=0, 1<=j<=n
 </pre>
 
+The basic strategy is relaxation. 
+
+Corner relaxation is that drop the nonnegativity restriction on all the basic variables xi, i ∈ B
+Linear relaxation is that drop the restriction on all the integer variables xi, i 
+
 we can rewrite it as the basic/nonbasic varaibles:
 
 <pre xml:lang="latex">
